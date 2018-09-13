@@ -38,7 +38,6 @@ public class UserController {
 	@GetMapping("{id}")
 	public AppUser findById(@PathVariable int id) {
 		AppUser user = us.findOne(id);
-		user.setRole("Admin!!!");
 		return user;
 	}
 

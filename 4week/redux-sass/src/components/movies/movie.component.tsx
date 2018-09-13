@@ -11,9 +11,7 @@ export class MoviesComponent extends React.Component<any, any> {
   }
 
   public componentDidMount() {
-    fetch(environment.context + 'movies', {
-      credentials: 'include'
-    })
+    fetch(environment.context + 'movies')
       .then(resp => resp.json())
       .then(movies => {
         this.setState({movies});

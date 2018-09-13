@@ -18,7 +18,8 @@ public class UserService {
 	private UserRepo ur;
 
 	public List<BasicUserProjection> findAll() {
-		return ur.findAllProjectedBy();
+		List<BasicUserProjection> users =  ur.findAllProjectedBy();
+		return users;
 	}
 
 	@Transactional(propagation = Propagation.MANDATORY)

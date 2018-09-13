@@ -6,6 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -19,9 +22,16 @@ public class Movie {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "movie_id")
 	private int id;
+	
+	@NotNull
 	private String title;
+	
 	@Column(name = "num_blades")
+	@Min(value=0l)
+	@Max(value=1000l)
 	private int numBlades;
+	
+	@Min(1888l)
 	private int year;
 
 	public Movie() {

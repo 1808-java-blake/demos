@@ -1,0 +1,72 @@
+2018-09-13 10:47:33 TRACE LoggingAspect:20 - Method called with signature: List com.revature.controllers.UserController.findAll()
+2018-09-13 10:47:33 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:47:33 TRACE LoggingAspect:20 - Method called with signature: List com.revature.services.UserService.findAll()
+2018-09-13 10:47:33 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:47:33 TRACE LoggingAspect:20 - Method called with signature: List com.revature.repos.UserRepo.findAllProjectedBy()
+2018-09-13 10:47:33 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:47:33 TRACE LoggingAspect:27 - Method with signature: List com.revature.repos.UserRepo.findAllProjectedBy() returned: [org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7e3fcdea, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3ed3c4a9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7ea60d79]
+2018-09-13 10:47:33 TRACE LoggingAspect:27 - Method with signature: List com.revature.services.UserService.findAll() returned: [org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7e3fcdea, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3ed3c4a9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7ea60d79]
+2018-09-13 10:47:33 TRACE LoggingAspect:27 - Method with signature: List com.revature.controllers.UserController.findAll() returned: [org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7e3fcdea, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3ed3c4a9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7ea60d79]
+2018-09-13 10:49:43 TRACE LoggingAspect:20 - Method called with signature: List com.revature.controllers.UserController.findAll()
+2018-09-13 10:49:43 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:49:43 TRACE LoggingAspect:20 - Method called with signature: List com.revature.services.UserService.findAll()
+2018-09-13 10:49:43 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:49:43 TRACE LoggingAspect:20 - Method called with signature: List com.revature.repos.UserRepo.findAllProjectedBy()
+2018-09-13 10:49:43 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:49:43 TRACE LoggingAspect:28 - Method with signature: List com.revature.repos.UserRepo.findAllProjectedBy() returned: [org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@487551c7, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@310894a8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@8b82ed0]
+2018-09-13 10:49:43 TRACE LoggingAspect:28 - Method with signature: List com.revature.services.UserService.findAll() returned: [org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@487551c7, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@310894a8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@8b82ed0]
+2018-09-13 10:49:43 TRACE LoggingAspect:28 - Method with signature: List com.revature.controllers.UserController.findAll() returned: [org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@487551c7, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@310894a8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@8b82ed0]
+2018-09-13 10:52:18 TRACE LoggingAspect:20 - Method called with signature: AppUser com.revature.controllers.UserController.findById(int)
+2018-09-13 10:52:18 TRACE LoggingAspect:21 - With arguments: [1]
+2018-09-13 10:52:18 TRACE LoggingAspect:20 - Method called with signature: AppUser com.revature.services.UserService.findOne(int)
+2018-09-13 10:52:18 TRACE LoggingAspect:21 - With arguments: [1]
+2018-09-13 10:52:18 TRACE LoggingAspect:20 - Method called with signature: Object org.springframework.data.jpa.repository.JpaRepository.getOne(Object)
+2018-09-13 10:52:18 TRACE LoggingAspect:21 - With arguments: [1]
+2018-09-13 10:52:18 TRACE LoggingAspect:35 - Object org.springframework.data.jpa.repository.JpaRepository.getOne(Object) threw exception with message: null
+2018-09-13 10:52:18 TRACE LoggingAspect:35 - AppUser com.revature.services.UserService.findOne(int) threw exception with message: null
+2018-09-13 10:52:18 TRACE LoggingAspect:35 - AppUser com.revature.controllers.UserController.findById(int) threw exception with message: null
+2018-09-13 10:53:13 TRACE LoggingAspect:20 - Method called with signature: List com.revature.controllers.UserController.usersThatLikeMovieWithId(int)
+2018-09-13 10:53:13 TRACE LoggingAspect:21 - With arguments: [1]
+2018-09-13 10:53:13 TRACE LoggingAspect:20 - Method called with signature: List com.revature.services.UserService.findByMoviesId(int)
+2018-09-13 10:53:13 TRACE LoggingAspect:21 - With arguments: [1]
+2018-09-13 10:53:13 TRACE LoggingAspect:20 - Method called with signature: List com.revature.repos.UserRepo.findByMoviesId(int)
+2018-09-13 10:53:13 TRACE LoggingAspect:21 - With arguments: [1]
+2018-09-13 10:53:13 TRACE LoggingAspect:35 - List com.revature.repos.UserRepo.findByMoviesId(int) threw exception with message: null
+2018-09-13 10:53:13 TRACE LoggingAspect:35 - List com.revature.services.UserService.findByMoviesId(int) threw exception with message: null
+2018-09-13 10:53:13 TRACE LoggingAspect:35 - List com.revature.controllers.UserController.usersThatLikeMovieWithId(int) threw exception with message: null
+2018-09-13 10:53:20 TRACE LoggingAspect:20 - Method called with signature: List com.revature.controllers.MovieController.findAll()
+2018-09-13 10:53:20 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:53:20 TRACE LoggingAspect:20 - Method called with signature: List com.revature.services.MovieService.findAll()
+2018-09-13 10:53:20 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 10:53:20 TRACE LoggingAspect:28 - Method with signature: List com.revature.services.MovieService.findAll() returned: [Movie [id=1, title=Solo, numBlades=200, year=2018], Movie [id=2, title=Infinity War, numBlades=200, year=2018], Movie [id=3, title=Sponge Out of Water, numBlades=200, year=2017], Movie [id=4, title=Sharknado, numBlades=1000, year=2013], Movie [id=5, title=Sharknado 2, numBlades=600, year=2014], Movie [id=6, title=The Nun, numBlades=9, year=2018], Movie [id=8, title=The Nuns, numBlades=9, year=2018], Movie [id=9, title=The Nun, numBlades=9, year=2017]]
+2018-09-13 10:53:20 TRACE LoggingAspect:28 - Method with signature: List com.revature.controllers.MovieController.findAll() returned: [Movie [id=1, title=Solo, numBlades=200, year=2018], Movie [id=2, title=Infinity War, numBlades=200, year=2018], Movie [id=3, title=Sponge Out of Water, numBlades=200, year=2017], Movie [id=4, title=Sharknado, numBlades=1000, year=2013], Movie [id=5, title=Sharknado 2, numBlades=600, year=2014], Movie [id=6, title=The Nun, numBlades=9, year=2018], Movie [id=8, title=The Nuns, numBlades=9, year=2018], Movie [id=9, title=The Nun, numBlades=9, year=2017]]
+2018-09-13 11:12:56 TRACE LoggingAspect:20 - Method called with signature: int com.revature.controllers.MovieController.save(Movie)
+2018-09-13 11:12:56 TRACE LoggingAspect:21 - With arguments: [Movie [id=0, title=test movie, numBlades=100, year=0]]
+2018-09-13 11:12:56 TRACE LoggingAspect:20 - Method called with signature: int com.revature.services.MovieService.save(Movie)
+2018-09-13 11:12:56 TRACE LoggingAspect:21 - With arguments: [Movie [id=0, title=test movie, numBlades=100, year=0]]
+2018-09-13 11:12:56 TRACE LoggingAspect:20 - Method called with signature: Object org.springframework.data.jpa.repository.JpaRepository.saveAndFlush(Object)
+2018-09-13 11:12:56 TRACE LoggingAspect:21 - With arguments: [Movie [id=0, title=test movie, numBlades=100, year=0]]
+2018-09-13 11:12:56 TRACE LoggingAspect:28 - Method with signature: Object org.springframework.data.jpa.repository.JpaRepository.saveAndFlush(Object) returned: Movie [id=10, title=test movie, numBlades=100, year=0]
+2018-09-13 11:12:56 TRACE LoggingAspect:28 - Method with signature: int com.revature.services.MovieService.save(Movie) returned: 10
+2018-09-13 11:12:56 TRACE LoggingAspect:28 - Method with signature: int com.revature.controllers.MovieController.save(Movie) returned: 10
+2018-09-13 11:15:33 TRACE LoggingAspect:20 - Method called with signature: int com.revature.controllers.MovieController.save(Movie)
+2018-09-13 11:15:33 TRACE LoggingAspect:21 - With arguments: [Movie [id=0, title=my movie, numBlades=100, year=2018]]
+2018-09-13 11:15:33 TRACE LoggingAspect:20 - Method called with signature: int com.revature.services.MovieService.save(Movie)
+2018-09-13 11:15:33 TRACE LoggingAspect:21 - With arguments: [Movie [id=0, title=my movie, numBlades=100, year=2018]]
+2018-09-13 11:15:33 TRACE LoggingAspect:20 - Method called with signature: Object org.springframework.data.jpa.repository.JpaRepository.saveAndFlush(Object)
+2018-09-13 11:15:33 TRACE LoggingAspect:21 - With arguments: [Movie [id=0, title=my movie, numBlades=100, year=2018]]
+2018-09-13 11:15:33 TRACE LoggingAspect:28 - Method with signature: Object org.springframework.data.jpa.repository.JpaRepository.saveAndFlush(Object) returned: Movie [id=11, title=my movie, numBlades=100, year=2018]
+2018-09-13 11:15:33 TRACE LoggingAspect:28 - Method with signature: int com.revature.services.MovieService.save(Movie) returned: 11
+2018-09-13 11:15:33 TRACE LoggingAspect:28 - Method with signature: int com.revature.controllers.MovieController.save(Movie) returned: 11
+2018-09-13 11:23:33 TRACE LoggingAspect:20 - Method called with signature: List com.revature.controllers.MovieController.findAll()
+2018-09-13 11:23:33 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 11:23:33 TRACE LoggingAspect:20 - Method called with signature: List com.revature.services.MovieService.findAll()
+2018-09-13 11:23:33 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 11:23:33 TRACE LoggingAspect:28 - Method with signature: List com.revature.services.MovieService.findAll() returned: [Movie [id=1, title=Solo, numBlades=200, year=2018], Movie [id=2, title=Infinity War, numBlades=200, year=2018], Movie [id=3, title=Sponge Out of Water, numBlades=200, year=2017], Movie [id=4, title=Sharknado, numBlades=1000, year=2013], Movie [id=5, title=Sharknado 2, numBlades=600, year=2014], Movie [id=6, title=The Nun, numBlades=9, year=2018], Movie [id=8, title=The Nuns, numBlades=9, year=2018], Movie [id=9, title=The Nun, numBlades=9, year=2017], Movie [id=10, title=test movie, numBlades=100, year=0], Movie [id=11, title=my movie, numBlades=100, year=2018]]
+2018-09-13 11:23:33 TRACE LoggingAspect:28 - Method with signature: List com.revature.controllers.MovieController.findAll() returned: [Movie [id=1, title=Solo, numBlades=200, year=2018], Movie [id=2, title=Infinity War, numBlades=200, year=2018], Movie [id=3, title=Sponge Out of Water, numBlades=200, year=2017], Movie [id=4, title=Sharknado, numBlades=1000, year=2013], Movie [id=5, title=Sharknado 2, numBlades=600, year=2014], Movie [id=6, title=The Nun, numBlades=9, year=2018], Movie [id=8, title=The Nuns, numBlades=9, year=2018], Movie [id=9, title=The Nun, numBlades=9, year=2017], Movie [id=10, title=test movie, numBlades=100, year=0], Movie [id=11, title=my movie, numBlades=100, year=2018]]
+2018-09-13 11:24:22 TRACE LoggingAspect:20 - Method called with signature: List com.revature.controllers.MovieController.findAll()
+2018-09-13 11:24:22 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 11:24:22 TRACE LoggingAspect:20 - Method called with signature: List com.revature.services.MovieService.findAll()
+2018-09-13 11:24:22 TRACE LoggingAspect:21 - With arguments: []
+2018-09-13 11:24:22 TRACE LoggingAspect:28 - Method with signature: List com.revature.services.MovieService.findAll() returned: [Movie [id=1, title=Solo, numBlades=200, year=2018], Movie [id=2, title=Infinity War, numBlades=200, year=2018], Movie [id=3, title=Sponge Out of Water, numBlades=200, year=2017], Movie [id=4, title=Sharknado, numBlades=1000, year=2013], Movie [id=5, title=Sharknado 2, numBlades=600, year=2014], Movie [id=6, title=The Nun, numBlades=9, year=2018], Movie [id=8, title=The Nuns, numBlades=9, year=2018], Movie [id=9, title=The Nun, numBlades=9, year=2017], Movie [id=10, title=test movie, numBlades=100, year=0], Movie [id=11, title=my movie, numBlades=100, year=2018]]
+2018-09-13 11:24:22 TRACE LoggingAspect:28 - Method with signature: List com.revature.controllers.MovieController.findAll() returned: [Movie [id=1, title=Solo, numBlades=200, year=2018], Movie [id=2, title=Infinity War, numBlades=200, year=2018], Movie [id=3, title=Sponge Out of Water, numBlades=200, year=2017], Movie [id=4, title=Sharknado, numBlades=1000, year=2013], Movie [id=5, title=Sharknado 2, numBlades=600, year=2014], Movie [id=6, title=The Nun, numBlades=9, year=2018], Movie [id=8, title=The Nuns, numBlades=9, year=2018], Movie [id=9, title=The Nun, numBlades=9, year=2017], Movie [id=10, title=test movie, numBlades=100, year=0], Movie [id=11, title=my movie, numBlades=100, year=2018]]
