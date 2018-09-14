@@ -14,10 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.dto.Credential;
 import com.revature.model.AppUser;
-import com.revature.model.Movie;
-import com.revature.projections.BasicUserProjection;
 import com.revature.services.UserService;
 
 @RestController
@@ -29,7 +26,7 @@ public class UserController {
 
 	// /users
 	@GetMapping
-	public List<BasicUserProjection> findAll() {
+	public List<AppUser> findAll() {
 		System.out.println("finding all users");
 		return us.findAll();
 	}
@@ -44,25 +41,9 @@ public class UserController {
 
 	@PostMapping
 	public ResponseEntity<AppUser> save(@RequestBody AppUser u) {
-		u.setId(1);
-		ResponseEntity<AppUser> re = new ResponseEntity<AppUser>(u, HttpStatus.CREATED);
-		return re;
-	}
-
-	@PostMapping("login")
-	public BasicUserProjection login(@RequestBody Credential u) {
-
-		return us.login(u.getUsername(), u.getPassword());
-	}
-
-	@GetMapping("movies/{id}")
-	public List<AppUser> usersThatLikeMovieWithId(@PathVariable int id) {
-		return us.findByMoviesId(id);
-	}
-
-	@PostMapping("/{id}/movies")
-	public void addMoveToUser(@PathVariable int id, @RequestBody Movie m) {
-		us.addMovieToUser(id, m);
+		AppUser user = us.save(u);
+		ResponseEntity<AppUser> resp = new ResponseEntity<AppUser>(user, HttpStatus.CREATED);
+		return resp;
 	}
 
 }

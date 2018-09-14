@@ -8,8 +8,6 @@ import org.springframework.web.client.RestTemplate;
 
 import com.revature.dto.Post;
 
-import antlr.collections.List;
-
 @RestController
 @RequestMapping("demos")
 public class DemoRestTemplateController {

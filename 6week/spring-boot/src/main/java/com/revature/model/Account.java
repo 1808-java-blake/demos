@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
@@ -19,6 +20,7 @@ public class Account {
 	private double balance;
 
 	@ManyToOne(fetch=FetchType.EAGER)
+	@JsonIgnore
 	private AppUser owner;
 
 	public Account() {
@@ -90,9 +92,9 @@ public class Account {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return "Account [accountNumber=" + accountNumber + ", balance=" + balance + ", owner=" + owner + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Account [accountNumber=" + accountNumber + ", balance=" + balance + ", owner=" + owner + "]";
+//	}
 
 }

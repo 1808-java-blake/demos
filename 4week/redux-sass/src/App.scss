@@ -1,5 +1,12 @@
 @import 'components/pokemon/pokemon-card/pokemon-card.scss';
 
+canvas {
+  position:absolute;
+  top:10%;
+  left:10%;
+  border:2px solid;
+}
+
 // variables can be declared and later reused
 $revature-orange: #f26925;
 

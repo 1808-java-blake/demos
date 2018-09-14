@@ -1,9 +1,10 @@
 package com.revature.projections;
 
-import org.springframework.data.web.ProjectedPayload;
+import java.util.List;
 
-import com.revature.model.AppUser;
+import com.revature.model.Movie;
 
+//@ProjectedPayload(name = "basicUser", types = { AppUser.class })
 public interface BasicUserProjection {
 	int getId();
 
