@@ -15,6 +15,7 @@ import { MoviesComponent } from './components/movies/movie.component';
 import { NestedComponent } from './components/nested/nested.component';
 import { Provider } from 'react-redux';
 import { store } from './Store';
+import { MyCanvas } from './components/canvas/my-canvas.component';
 
 class App extends React.Component {
   public render() {
@@ -35,6 +36,7 @@ class App extends React.Component {
                 <Route path="/pokemon" component={PokemonComponent} />
                 <Route path="/movies" component={MoviesComponent} />
                 <Route path="/nested" component={NestedComponent} />
+                <Route path="/canvas" component={MyCanvas} />
                 <Route component={HomeComponent} />
               </Switch>
             </div>
