@@ -14,4 +14,14 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 2
     lease-renewal-interval-in-seconds: 1
+    
+feign:
+  hystrix: 
+    enabled: true
+    
+management:
+  security:
+    enabled: false
+  endpoints:
+    enabled-by-default: true
 
