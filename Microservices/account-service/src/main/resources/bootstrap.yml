@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    config:
+      name: account-service
+      discovery:
+        service-id: config-server
+        enabled: true
+      fail-fast: true
+      
+#server:
+#  port: 8088
+#
+#spring:
+#  application:
+#    name: account-service
+#
+#eureka:
+#  client:
+#    enabled: true
+#    service-url:
+#      defaultZone: http://localhost:8762/eureka
+##  you probably wouldn't set it this short in production but will be convenient for dev
+#  instance:
+#    lease-expiration-duration-in-seconds: 2
+#    lease-renewal-interval-in-seconds: 1
+#
