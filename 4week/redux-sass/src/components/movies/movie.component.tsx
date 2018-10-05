@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { environment } from '../../environment';
 
+/**
+ * The Movie Component will display all movies from the db
+ */
 export class MoviesComponent extends React.Component<any, any> {
 
   public constructor(props: any) {
@@ -12,7 +15,12 @@ export class MoviesComponent extends React.Component<any, any> {
 
   public componentDidMount() {
     fetch(environment.context + 'movies')
-      .then(resp => resp.json())
+      .then(resp => {
+        if (resp.status !== 200) {
+          throw new Error('failed to retreive movies');
+        }
+        resp.json()
+      })
       .then(movies => {
         this.setState({movies});
       })

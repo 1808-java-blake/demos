@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { HomeComponent } from './components/home/home.component';
 import SignInComponent from './components/sign-in/sign-in.component';
 import ClickerComponent from './components/clicker/clicker.component';
-import { TicTacComponent } from './components/tic-tac/tic-tac.component';
+import TicTacComponent from './components/tic-tac/tic-tac.component';
 import ChuckNorrisComponent from './components/chuck-norris/chuck-norris.component';
 import PokemonComponent from './components/pokemon/pokemon.component';
 import { MoviesComponent } from './components/movies/movie.component';
@@ -16,6 +16,7 @@ import { NestedComponent } from './components/nested/nested.component';
 import { Provider } from 'react-redux';
 import { store } from './Store';
 import { MyCanvas } from './components/canvas/my-canvas.component';
+import { FragmentExample } from './components/fragment/fragment.component';
 
 class App extends React.Component {
   public render() {
@@ -37,6 +38,7 @@ class App extends React.Component {
                 <Route path="/movies" component={MoviesComponent} />
                 <Route path="/nested" component={NestedComponent} />
                 <Route path="/canvas" component={MyCanvas} />
+                <Route path="/fragment" component={FragmentExample} />
                 <Route component={HomeComponent} />
               </Switch>
             </div>

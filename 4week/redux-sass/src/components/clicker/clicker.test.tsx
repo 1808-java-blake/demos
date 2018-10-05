@@ -12,22 +12,23 @@ describe('<ClickerComponent />', () => {
   })
 
   it ('renders one <ClickerIncrementer />', () => {
-    const empty: any = null;
+    const mockProps: any = {
+      clicks: 19
+    }
     const wrapper = shallow(
       <ClickerComponent 
-        clicks={19}
-        increment={empty}
-        buyJoke={empty}/>);
+        {...mockProps}
+        />);
     expect(wrapper.find(ClickerIncrementer)).toHaveLength(1);
   })
 
   it ('renders two <ClickerIncrementer />', () => {
-    const empty: any = null;
+    const mockProps: any = {
+      clicks: 20
+    }
     const wrapper = shallow(
       <ClickerComponent 
-        clicks={20}
-        increment={empty}
-        buyJoke={empty}/>);
+        {...mockProps}/>);
     expect(wrapper.find(ClickerIncrementer)).toHaveLength(2);
   })
 })

@@ -15,22 +15,33 @@ export class MyCanvas extends React.Component<any, {}> {
   }
 
   public componentDidMount() {
+
+    // initialize the size of the canvas based off the window size
+    const modifier = 0.80;
     const current = this.canvas.current;
-    current.width = window.innerWidth;
-    current.height = window.innerHeight;
+    current.width = modifier * window.innerWidth;
+    current.height = modifier * window.innerHeight;
+
+    // update the size of the canvas everytime the window size changes
     this.windowSubscription = windowStream.subscribe(newDimension => {
       const ctx = this.getContext();
       const savedRect = ctx.getImageData(0, 0, current.width, current.height);
-      current.width = newDimension.width;
-      current.height = newDimension.height;
+      current.width = modifier * newDimension.width;
+      current.height = modifier * newDimension.height;
       ctx.putImageData(savedRect, 0, 0);
     })
   }
 
+  /**
+   * Helper method to retreive the reference for the canvas context
+   */
   public getContext(): CanvasRenderingContext2D {
     return this.canvas.current.getContext("2d");
   }
 
+  /**
+   * logic to draw based on connecting the points between current point and last point when events are registered
+   */
   public draw = (e: any) => {
     if (this.isDrawing) {
       const current = this.canvas.current;
@@ -43,6 +54,7 @@ export class MyCanvas extends React.Component<any, {}> {
     }
   }
 
+  
   public stopDraw = () => {
     this.isDrawing = false;
   }
@@ -57,12 +69,23 @@ export class MyCanvas extends React.Component<any, {}> {
 
   public render() {
     return (
-      <canvas id="my-canvas"
-        ref={this.canvas} 
-        onMouseMove={this.draw} 
-        onMouseDown={this.startDraw}
-        onMouseUp={this.stopDraw}
-        onMouseOut={this.stopDraw}> </canvas>
+      <div className="canvas-container">
+        <canvas id="my-canvas"
+          ref={this.canvas}
+          onMouseMove={this.draw}
+          onMouseDown={this.startDraw}
+          onMouseUp={this.stopDraw}
+          onMouseOut={this.stopDraw}> 
+        </canvas>
+        <div className="side-bar">
+          <div> Upgrade 1 </div>
+          <div> Upgrade 2 </div>
+          <div> Upgrade 3 </div>
+          <div> Upgrade 4 </div>
+          <div> Upgrade 5 </div>
+          <div> Upgrade 6 </div>
+        </div>
+      </div>
     );
   }
 

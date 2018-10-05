@@ -1,12 +1,5 @@
 @import 'components/pokemon/pokemon-card/pokemon-card.scss';
 
-canvas {
-  position:absolute;
-  top:10%;
-  left:10%;
-  border:2px solid;
-}
-
 // variables can be declared and later reused
 $revature-orange: #f26925;
 
@@ -135,7 +128,36 @@ nav {
   Canvas
 *****************************/
 #my-canvas {
-  // width: 100%;
-  // height: 100%;
   border: solid 1px black;
+  top:10%;
+  left:10%;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*****************************
+  TIC TAC TOE
+*****************************/
+.tic-tac-col {
+  border: 1px solid black;
+  font-size: 4em;
+  text-align: center;
+  min-height: 2em ;
+  cursor: pointer;
+  border-radius: 0.1em;
+
+  &:hover {
+    box-shadow: inset 0px 0px 0.5em 0px $revature-orange;
+  }
+}
+#tic-tac-board {
+  width: 75%;
+  margin: 0.5em;
+}
+
+.not-allowed-cursor {
+  cursor: not-allowed;
 }

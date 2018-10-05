@@ -4,13 +4,17 @@ import { ClickerIncrementer } from './incrementers/clicker-incrementer.component
 import { connect } from 'react-redux';
 import { IState } from '../../reducers';
 import { increment, buyJoke } from '../../actions/clicker/clicker.actions'
+import { RouteComponentProps } from 'react-router';
 
-interface IProps {
-  increment: (amount: number) => any,
+export interface IProps extends RouteComponentProps<{}>{
+  increment: (amount: number) => void,
   clicks: number
   buyJoke: () => void
 }
 
+/**
+ * The clicker 
+ */
 export class ClickerComponent extends React.Component<IProps, {}> {
 
   constructor(props: any) {

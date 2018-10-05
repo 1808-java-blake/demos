@@ -42,6 +42,7 @@ const AppNav: React.StatelessComponent<any> = (props) => {
                 <div className="dropdown-item"><Link to="/chuck-norris" className="unset-anchor nav-link active">Chuck Norris Jokes</Link></div>
                 <div className="dropdown-item"><Link to="/pokemon" className="unset-anchor nav-link active">Pokemon</Link></div>
                 <div className="dropdown-item"><Link to="/canvas" className="unset-anchor nav-link active">Canvas</Link></div>
+                <div className="dropdown-item"><Link to="/fragment" className="unset-anchor nav-link active">Fragment</Link></div>
               </div>
             </li>
             <li className="nav-item active">
