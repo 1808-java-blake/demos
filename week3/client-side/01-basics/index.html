@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Answer</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <tr>
+        <td>What is your favorite dog?</td>
+        <td>Corgi</td>
+      </tr>
+      <tr>
+        <td>Is JavaScript Strongly or Loosely typed?</td>
+        <td>Loosely</td>
+      </tr>
+    </tbody>
+  </table>
+  <form onsubmit="event.preventDefault(); addNewQuestion()">
+    <input id="new-question" type="text" placeholder="question">
+    <input id="new-answer" type="text" placeholder="answer">
+    <button id="question-submit-button" type="submit">submit</button>
+  </form>
+  <script src="main.js"></script>
+</body>
+
+</html>

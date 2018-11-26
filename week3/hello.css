@@ -1,0 +1,30 @@
+/* don't do this*/
+body {
+  background-image: url(https://images.pexels.com/photos/226597/pexels-photo-226597.jpeg?auto=compress&cs=tinysrgb&h=350);
+}
+
+.my-class {
+  color: aqua;
+  background-color: green;
+  font-size: 2em;
+  margin: 20px;
+}
+
+.my-class:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.test {
+  color: yellow;
+  border: dotted pink 40px;
+  padding: 1em;
+  font-family: fantasy;
+}
+
+#cool {
+  color: purple;
+  text-align: center;
+  border-left: groove black 12pt;
+  border-right: gold dotted 6pt;
+}
